@@ -1,0 +1,14 @@
+body {
+	background: #900;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+}
+
+.shoutout {
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+}
