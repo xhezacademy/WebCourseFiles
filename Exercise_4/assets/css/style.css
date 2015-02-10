@@ -18,16 +18,72 @@
 #main-header {
 	background-color: #008451;
 	padding: 10px 30px;
+	overflow: hidden;
 }
 
 #main-header h1 {
 	margin-bottom: 0;
+	float: left;
 }
 
-#main-header ul.socials {     list-style: none;     float: right; }
+#main-header ul.socials {
+	margin-top: 45px;
+	list-style: none;
+	float: right;
+}
+
+#main-header ul.socials li {
+	margin: 5px;
+	display: inline;
+	float: left;
+}
 
 #main-header ul.socials li a {
 	text-decoration: none;
+	opacity: 0.7;
+}
+
+/* a:focus, a:visited, a:link*/
+#main-header ul.socials li a:hover {
+	opacity: 1;
+}
+
+#main-header ul.socials li.twitter {
+	width: 21px;
+	height: 18px;
+}
+
+#main-header ul.socials li.twitter a {
+	display: block;
+	/*background: url(../imgs/twitter.png) no-repeat;*/
+	background-image: url(../imgs/twitter.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+
+}
+
+#main-header ul.socials li.globe {
+	margin-top: -13px;
+}
+
+#main-header ul.socials li.globe img {
+	float: left;
+	margin-top: 4px;
+}
+
+#main-header ul.socials li.globe p {
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	margin: 0;
+	float: left;
+	width: 280px;
+	margin-left: 10px;
+}
+
+#main-header ul.socials li.globe span {
+	font-size: 2rem;
+	color: #FF0;
 }
 
 nav.top-bar {
