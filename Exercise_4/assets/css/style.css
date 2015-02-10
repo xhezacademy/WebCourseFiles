@@ -1,0 +1,96 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 3rem auto; /* 0 auto */
+	min-height: 500px;
+	background: #e5e5e5;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#main-header {
+	background-color: #008451;
+	padding: 10px 30px;
+}
+
+#main-header h1 {
+	margin-bottom: 0;
+}
+
+#main-header ul.socials {     list-style: none;     float: right; }
+
+#main-header ul.socials li a {
+	text-decoration: none;
+}
+
+nav.top-bar {
+	background-color: #009d60;
+}
+
+nav.top-bar ul {
+	margin: 0;
+	list-style: none;
+	height: 45px;
+	padding: 10px;
+}
+
+nav.top-bar ul li {
+	display: inline;
+	margin: 4px 8px;
+}
+
+nav.top-bar ul li a {
+	padding: 3px 5px;
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+ul.items {
+	list-style: circle;
+}
+
+ol.todo {
+	list-style: upper-roman;
+	/*list-style-image: url(assets/imgs/dot.png);*/
+}
+
+dl.info dt {
+	font-weight: bold;
+}
+
+dl.info dd {
+	font-style: italic;
+	margin-left: 20px;
+}
+
+p {
+	margin: 20px 0 40px;
+}
+
+p.bravo {
+	font: italic bold 20px "Helvetica", Arial, sans-serif;
+	line-height: 1.5; 
+	border-top: 2px solid #900;
+	padding-top: 20px;
+}
+
+/* CSS Measuring Units = Njesi Matese */
+.klass {
+	width: 400pt;
+	width: 400px;
+	width: 40em;
+	width: 40rem;
+	width: 40%;
+}
