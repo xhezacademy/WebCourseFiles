@@ -8,7 +8,7 @@
 	width: 960px;
 	margin: 3rem auto; /* 0 auto */
 	min-height: 500px;
-	background: #e5e5e5;
+	background: #888;
 }
 
 .clearfix {
@@ -19,6 +19,7 @@
 	background-color: #008451;
 	padding: 10px 30px;
 	overflow: hidden;
+	position: relative;
 }
 
 #main-header h1 {
@@ -27,9 +28,10 @@
 }
 
 #main-header ul.socials {
-	margin-top: 45px;
 	list-style: none;
-	float: right;
+	position: absolute;
+	right:-35px;
+	bottom: -3px;
 }
 
 #main-header ul.socials li {
@@ -149,4 +151,43 @@ p.bravo {
 	width: 40em;
 	width: 40rem;
 	width: 40%;
+}
+
+section#citation {
+	background-color: #fff;
+	padding: 20px 30px;
+}
+
+#citation blockquote {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	line-height: 1.4;
+	font-size: 24px;
+	color: #888;
+	margin: 0;
+}
+
+#citation cite {
+	text-align: center;
+	display: block;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #009d60;
+	text-transform: lowercase;
+	margin-top: 15px;
+}
+
+#citation cite span.unitalic {
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+#slider ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#slider ul li img {
+	width: 100%;
 }
