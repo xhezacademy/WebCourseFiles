@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	/*background: url(../imgs/stardust.png) no-repeat fixed;*/
+	background: url(../imgs/bckg.jpg) fixed;
+}
+
 #wrapper {
 	width: 960px;
 	margin: 3rem auto; /* 0 auto */
@@ -36,19 +41,42 @@
 
 #main-header ul.socials li {
 	margin: 5px;
-	display: table;
+	display: inline;
 	float: left;
-	height: 60px;
-}
-
-#main-header ul.socials li div {
-	display: table-cell;
-	vertical-align: middle;
 }
 
 #main-header ul.socials li a {
+	background-image: url(../imgs/sprites.gif);
 	text-decoration: none;
+	display: block;
+	height: 31px;
+	width: 31px;
 	opacity: 0.7;
+
+}
+
+ul.socials li.yt_icon a {
+	background-position: 31px 0;
+}
+
+ul.socials li.yt_icon a:hover {
+	background-position: 31px 31px;
+}
+
+ul.socials li.fb_icon a {
+	background-position: 128px 0;
+}
+
+ul.socials li.fb_icon a:hover {
+	background-position: 128px 31px;
+}
+
+ul.socials li.tw_icon a {
+	background-position: 94px 0;
+}
+
+ul.socials li.tw_icon a:hover {
+	background-position: 94px 31px;
 }
 
 /* a:focus, a:visited, a:link*/
@@ -56,20 +84,22 @@
 	opacity: 1;
 }
 
-/*#main-header ul.socials li.twitter {
+#main-header ul.socials li.twitter {
 	width: 21px;
 	height: 18px;
+	/*display: none;*/
+	/*visibility: hidden;*/
 }
 
 #main-header ul.socials li.twitter a {
 	display: block;
-	background: url(../imgs/twitter.png) no-repeat;
+	/*background: url(../imgs/twitter.png) no-repeat;*/
 	background-image: url(../imgs/twitter.png);
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 
 }
-*/
+
 #main-header ul.socials li.globe {
 	margin-top: -13px;
 }
@@ -121,17 +151,42 @@ nav.top-bar ul li a {
 	font-family: Arial, sans-serif;
 }
 
-nav.top-bar ul li.lang {
-	float: right;
-	margin: 0 5px 0 0;
+ul.items {
+	list-style: circle;
 }
 
-nav.top-bar ul li.lang a {
-	display: inline-block;
+ol.todo {
+	list-style: upper-roman;
+	/*list-style-image: url(assets/imgs/dot.png);*/
 }
 
-nav.top-bar ul li.lang a:last-child {
-	border-left: 1px solid white;
+dl.info dt {
+	font-weight: bold;
+}
+
+dl.info dd {
+	font-style: italic;
+	margin-left: 20px;
+}
+
+p {
+	margin: 20px 0 40px;
+}
+
+p.bravo {
+	font: italic bold 20px "Helvetica", Arial, sans-serif;
+	line-height: 1.5; 
+	border-top: 2px solid #900;
+	padding-top: 20px;
+}
+
+/* CSS Measuring Units = Njesi Matese */
+.klass {
+	width: 400pt;
+	width: 400px;
+	width: 40em;
+	width: 40rem;
+	width: 40%;
 }
 
 section#citation {
