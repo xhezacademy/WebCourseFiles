@@ -1,0 +1,220 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	/*http://files.christophzillgens.com/webkit-font-smoothing.html*/
+}
+
+#wrapper {
+	width: 960px;
+	margin: 3rem auto; /* 0 auto */
+	min-height: 500px;
+	background: #888;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#main-header {
+	background-color: #008451;
+	padding: 10px 30px;
+	overflow: hidden;
+	position: relative;
+}
+
+#main-header h1 {
+	margin-bottom: 0;
+	float: left;
+}
+
+#main-header ul.socials {
+	list-style: none;
+	position: absolute;
+	right:-35px;
+	bottom: -3px;
+}
+
+#main-header ul.socials li {
+	margin: 5px;
+	display: table;
+	float: left;
+	height: 60px;
+}
+
+#main-header ul.socials li div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#main-header ul.socials li a {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+/* a:focus, a:visited, a:link*/
+#main-header ul.socials li a:hover {
+	opacity: 1;
+}
+
+/*#main-header ul.socials li.twitter {
+	width: 21px;
+	height: 18px;
+}
+
+#main-header ul.socials li.twitter a {
+	display: block;
+	background: url(../imgs/twitter.png) no-repeat;
+	background-image: url(../imgs/twitter.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+
+}
+*/
+#main-header ul.socials li.globe {
+	margin-top: -13px;
+}
+
+#main-header ul.socials li.globe img {
+	float: left;
+	margin-top: 4px;
+}
+
+#main-header ul.socials li.globe p {
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	margin: 0;
+	float: left;
+	width: 280px;
+	margin-left: 10px;
+}
+
+#main-header ul.socials li.globe span {
+	font-size: 2rem;
+	color: #FF0;
+}
+
+nav.top-bar {
+	background-color: #009d60;
+}
+
+nav.top-bar ul {
+	margin: 0;
+	list-style: none;
+	height: 45px;
+	padding: 10px;
+}
+
+nav.top-bar ul li {
+	display: inline;
+	margin: 4px 8px;
+}
+
+nav.top-bar ul li a {
+	padding: 3px 5px;
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+nav.top-bar ul li.lang {
+	float: right;
+	margin: 0 5px 0 0;
+}
+
+nav.top-bar ul li.lang a {
+	display: inline-block;
+}
+
+nav.top-bar ul li.lang a:last-child {
+	border-left: 1px solid white;
+}
+
+section#citation {
+	background-color: #fff;
+	padding: 20px 30px;
+}
+
+#citation blockquote {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	line-height: 1.4;
+	font-size: 24px;
+	color: #888;
+	margin: 0;
+}
+
+#citation cite {
+	text-align: center;
+	display: block;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #009d60;
+	text-transform: lowercase;
+	margin-top: 15px;
+}
+
+#citation cite span.unitalic {
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+#slider ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#slider ul li img {
+	width: 100%;
+	/*display: inherit;*/
+}
+
+#main-content {
+	padding: 30px;
+	overflow: hidden;
+	background: white;
+}
+
+#main-content #posts {
+	border-top: 3px solid black;
+	width: 68%;
+	float: left;
+}
+
+#main-content #posts h2 {
+	font-family: Georgia, serif;
+	font-size: 1.6rem;
+	color: #009d60;
+}
+
+#main-content .post p {
+	line-height: 1.6;
+	color: #444;
+}
+
+#main-content #posts .read_more {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: orange;
+}
+
+#main-content h5 {
+	font-size: 1rem;
+	color: 333;
+	text-transform: uppercase;
+}
+
+#main-content #sidebar {
+	width: 26%;
+	float: right;
+}
