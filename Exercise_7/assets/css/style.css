@@ -176,7 +176,7 @@ section#citation {
 
 #slider ul li img {
 	width: 100%;
-	/*display: inherit;*/
+	display: inherit;
 }
 
 #main-content {
@@ -217,4 +217,61 @@ section#citation {
 #main-content #sidebar {
 	width: 26%;
 	float: right;
+}
+
+div#search-box {
+	background: #000;
+	position: relative;
+}
+
+form#search fieldset {
+	border: none;
+	padding: 8px !important;
+}
+
+form#search input {
+	background-color: #000;
+	border: none;
+	outline: none;
+	width: 90%;
+	font-family: Georgia, serif;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+form#search input[name="submit"] {
+	position: absolute;
+	background-image: url(../imgs/search.png);
+	background-color: #000;
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 22px;
+	right: 15px;
+	top: 10px;
+}
+
+div.donators-list {
+	background: #000;
+	color: #fff;
+	padding: 10px 25px;
+	margin-top: 20px;
+	font-family: Arial, sans-serif;
+}
+
+div.donators-list h6 {
+	text-transform: uppercase;
+
+}
+
+div.donators-list ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+div.donators-list ul li {
+	line-height: 1.6;
+}
+
+div.donators-list ul li a.xhavit {
+	color: orange;
 }
