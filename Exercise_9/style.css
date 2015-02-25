@@ -1,0 +1,118 @@
+/* Global resets */
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; color: #424242; line-height: 1.4;}
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: skyblue;
+}
+
+p {
+  color: #999;
+  margin-bottom: 10px;
+}
+
+p > span {
+  font-weight: bold;
+  color: darkorange;
+}
+
+.dark-box {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 15px;
+  font-family: Georgia, serif;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #424242;
+  position: absolute;
+  bottom: -7px;
+  right: 30px;
+}
+
+.white-box {
+  border:1px solid #666;
+  text-align: left;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 70%;
+  height: 10px;
+}
+
+.inner {
+  padding: 20px 25px;
+}
+
+form {
+  margin-bottom: 5px;
+}
+
+input {
+  display: inline-block;
+  width: 45%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding: 15px;
+}
+
+input:first-child {
+  margin-right: 20px;
+  box-shadow: 0px 2px 1px 0px #888 inset;
+}
+
+input[type="submit"] {
+  background-color: #7fff00;
+  color: white;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+div.butonat {
+  margin-top: 20px;
+  text-align: left;
+}
+
+div.butonat button {
+  padding: 10px;
+  width: 45%;
+  box-shadow: 0px 1px 2px 0px #888;
+}
+
+div.butonat button:last-child {
+  margin-left: 25px;
+}
