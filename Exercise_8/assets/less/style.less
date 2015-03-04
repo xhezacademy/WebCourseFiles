@@ -1,5 +1,6 @@
 @import 'bootstrap/bootstrap.less';
 @import 'variables.less';
+@import 'partials/main.less';
 @import 'partials/footer.less';
 
 @dark-green: #008451;
@@ -10,12 +11,8 @@ body {
 	/*http://files.christophzillgens.com/webkit-font-smoothing.html*/
 }
 
-#wrapper {
-	width: 960px;
-	margin: 3rem auto; /* 0 auto */
-	min-height: 500px;
-	background: #888;
-	color: inherit;
+.container {
+	margin: 3rem auto;
 }
 
 .clearfix {
@@ -159,6 +156,27 @@ section#citation {
 	text-transform: uppercase;
 }
 
+@media screen and (min-width: @screen-sm-min) {
+	#citation cite {
+		color: #900;
+	}
+}
+
+@media screen and (max-width:460px) {
+	#citation cite {
+		color: darkblue;
+	}
+}
+
+#slider {
+	.make-row();
+
+	.slide-container {
+		.make-sm-column(6);
+		.make-sm-column-offset(3);
+	}
+}
+
 #slider ul {
 	margin: 0;
 	padding: 0;
@@ -168,101 +186,4 @@ section#citation {
 #slider ul li img {
 	width: 100%;
 	display: inherit;
-}
-
-#main-content {
-	padding: 30px;
-	overflow: hidden;
-	background: white;
-}
-
-#main-content #posts {
-	border-top: 3px solid black;
-	width: 68%;
-	float: left;
-}
-
-#main-content #posts h2 {
-	font-family: Georgia, serif;
-	font-size: 1.6rem;
-	color: #009d60;
-}
-
-#main-content .post p {
-	line-height: 1.6;
-	color: #444;
-}
-
-#main-content #posts .read_more {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: orange;
-}
-
-#main-content h5 {
-	font-size: 1rem;
-	color: 333;
-	text-transform: uppercase;
-}
-
-#main-content #sidebar {
-	width: 26%;
-	float: right;
-}
-
-div#search-box {
-	background: #000;
-	position: relative;
-}
-
-form#search fieldset {
-	border: none;
-	padding: 8px !important;
-}
-
-form#search input {
-	background-color: #000;
-	border: none;
-	outline: none;
-	width: 90%;
-	font-family: Georgia, serif;
-	color: #fff;
-	padding: 3px 8px;
-}
-
-form#search input[name="submit"] {
-	position: absolute;
-	background-image: url(../imgs/search.png);
-	background-color: #000;
-	background-repeat: no-repeat;
-	width: 21px;
-	height: 22px;
-	right: 15px;
-	top: 10px;
-}
-
-div.donators-list {
-	background: #000;
-	color: #fff;
-	padding: 10px 25px;
-	margin-top: 20px;
-	font-family: Arial, sans-serif;
-}
-
-div.donators-list h6 {
-	text-transform: uppercase;
-
-}
-
-div.donators-list ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-div.donators-list ul li {
-	line-height: 1.6;
-}
-
-div.donators-list ul li a.xhavit {
-	color: orange;
 }
