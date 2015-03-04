@@ -1,0 +1,38 @@
+@import "sidebar.less";
+
+#main-content {
+  // padding: 30px;
+  // overflow: hidden;
+  // background: white;
+  .make-row();
+
+  #posts {
+    border-top: 3px solid black;
+    .make-lg-column(8);
+    // .make-md-column(9);
+    // .make-sm-column();
+  
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+      color: #009d60;
+    }
+    
+    h5 {
+      font-size: 1rem;
+      color: 333;
+      text-transform: uppercase;
+    }
+    
+    .post p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .read_more {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: orange;
+    }
+  }
+}
