@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Kalliri i Miresise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -14,57 +15,73 @@
 
 	<div class="container">
 		<header id="main-header">
-			<h1>
-				<a href="/" title="Kalliri i Miresise">
-					<img src="assets/imgs/logos.png" alt="Kalliri i Miresise Logo">
-				</a>
-			</h1>
-			<ul class="socials">
-				<li>
+			<div class="col-md-6">
+				<h1>
+					<a href="/" title="Kalliri i Miresise">
+						<img src="assets/imgs/logos.png" alt="Kalliri i Miresise Logo">
+					</a>
+				</h1>
+			</div>
+			<div class="col-md-6">
+				<ul class="socials">
+					<li>
+						<div>
+							<a href="http://youtube.com">
+							<img src="assets/imgs/youtube.png" alt="Subscribe on YouTube"></a>
+						</div>
+					</li>
+					<li>
 					<div>
-						<a href="http://youtube.com">
-						<img src="assets/imgs/youtube.png" alt="Subscribe on YouTube"></a>
-					</div>
-				</li>
-				<li>
-				<div>
-					<a href="http://facebook.com">
-					<img src="assets/imgs/facebook.png" alt="Like on Facebook"></a>
-					</div></li>
-				<li class="twitter">
-					<div>
-						<a href="#">
-						<img src="assets/imgs/twitter.png" alt="Follow us on Twitter"></a>
-					</div>
-				</li>
-				<li class="globe">
-					<img src="assets/imgs/globe.png" alt="Global Info">
-					<p>
-						thirr per te donuar	
-						<span>+38649400145</span>
-				</p></li>
-			</ul>
-			<!-- <div class="clearfix"></div> -->
+						<a href="http://facebook.com">
+						<img src="assets/imgs/facebook.png" alt="Like on Facebook"></a>
+						</div></li>
+					<li class="twitter">
+						<div>
+							<a href="#">
+							<img src="assets/imgs/twitter.png" alt="Follow us on Twitter"></a>
+						</div>
+					</li>
+					<li class="globe">
+						<img src="assets/imgs/globe.png" alt="Global Info">
+						<p>
+							thirr per te donuar	
+							<span>+38649400145</span>
+					</p></li>
+				</ul>
+			</div>
 		</header>
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-			<ul class="list-inline">
-				<li><a href="/">Ballina</a></li>
-				<li><a href="/about-us">Rreth Nesh</a></li>
-				<li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
-				<li class="lang">
-					<a href="#">Shqip</a>
-					<a href="#">English</a>
-				</li>
-			</ul>
-		  </div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Ballina</a></li>
+						<li><a href="/about-us">Rreth Nesh</a></li>
+						<li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
+						<li class="lang">
+							<a href="#">Shqip</a>
+							<a href="#">English</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<section id="citation">
-			<blockquote>
-				Kush ja ledhaton kokën e një jetimi për dashurinë e Zotit, do të merr shpërblim për çdo qime floku që e përshkon dorën e tij si dhe do të qëndroj afër me mua në Xhenet.
-			</blockquote>
-			<cite><span class="unitalic">MUHAMMEDI</span> <br>
-			Paqja e Zotit qoftë mbi të</cite>
+			<div class="col-md-12">
+				<blockquote>
+					Kush ja ledhaton kokën e një jetimi për dashurinë e Zotit, do të merr shpërblim për çdo qime floku që e përshkon dorën e tij si dhe do të qëndroj afër me mua në Xhenet.
+				</blockquote>
+				<cite><span class="unitalic">MUHAMMEDI</span> <br>
+				Paqja e Zotit qoftë mbi të</cite>
+			</div>
 		</section>
 		<section id="slider">
 			<div class="slide-container">
@@ -97,7 +114,7 @@
 			<!-- File Upload Attr = enctype="multipart/form-data" -->
 					<form method="get" action="/" id="search" autocomplete="off">
 						<fieldset>
-							<input name="term" type="search" autofocus required x-webkit-speech />
+							<input name="term" type="search" required x-webkit-speech />
 							<input name="submit" type="submit" value="">
 							<!-- <input name="resume" type="file"> -->
  							<!-- <button>
@@ -122,10 +139,10 @@
 		</section>
 		<footer id="site-footer">
 			<div id="donate-bar">
-				<div class="col-9">
+				<div class="donate-slogan">
 					<h2>Blah blah blah</h2>
 				</div>
-				<div class="col-3">
+				<div class="donate-action">
 					<p>
 						<a href="#" class="button">
 						dhuro
@@ -169,6 +186,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
