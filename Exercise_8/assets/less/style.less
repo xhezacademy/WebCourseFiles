@@ -20,10 +20,10 @@ body {
 }
 
 #main-header {
+	.make-row();
+	
+	padding: 10px 0;
 	background-color: @dark-green;
-	padding: 10px 30px;
-	overflow: hidden;
-	position: relative;
 }
 
 #main-header h1 {
@@ -33,9 +33,8 @@ body {
 
 #main-header ul.socials {
 	list-style: none;
-	position: absolute;
-	right:-35px;
-	bottom: -3px;
+	padding-left: 0;
+	.pull-right();
 }
 
 #main-header ul.socials li {
@@ -61,7 +60,7 @@ body {
 }
 
 #main-header ul.socials li.globe {
-	margin-top: -13px;
+
 }
 
 #main-header ul.socials li.globe img {
@@ -87,37 +86,22 @@ body {
 nav.navbar {
 	background-color: #009d60;
 
-	ul {
-		margin: 0;
-		list-style: none;
-		// height: 45px;
-		padding: 10px;
+	.navbar-nav {
+		// .make-sm-column(12);
+		width: 100%;
 
-		li {
-			display: inline;
-			margin: 4px 8px;
-
-			a {
-				padding: 3px 5px;
-				display: inline-block;
-				color: #fff;
-				font-size: 18px;
-				font-weight: bold;
-				text-transform: uppercase;
-				text-decoration: none;
-				font-family: Arial, sans-serif;
-			}
-
-			&.lang {
-				.pull-right();
-				margin: 0 5px 0 0;
-			}	
+		li a {
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
 		}
-
 	}
-
 }
 
+nav.navbar li.lang {
+	.pull-right();
+	margin: 0 5px 0 0;
+}
 
 nav.navbar ul li.lang a {
 	display: inline-block;
@@ -128,17 +112,23 @@ nav.navbar ul li.lang a:last-child {
 }
 
 section#citation {
+	.make-row();
 	background-color: #fff;
-	padding: 20px 30px;
+	padding: 20px 0;
 }
 
 #citation blockquote {
 	font-family: Arial, sans-serif;
 	text-align: center;
 	line-height: 1.4;
-	font-size: 24px;
-	color: #888;
 	margin: 0;
+	font-size: 17px;
+	color: #888;
+
+	@media (min-width: @screen-sm-min) {
+		margin: 0 25px;
+		font-size: 24px;
+  }
 }
 
 #citation cite {
@@ -156,24 +146,25 @@ section#citation {
 	text-transform: uppercase;
 }
 
-@media screen and (min-width: @screen-sm-min) {
-	#citation cite {
-		color: #900;
-	}
-}
+// @media screen and (min-width: @screen-sm-min) {
+// 	#citation cite {
+// 		color: #900;
+// 	}
+// }
 
-@media screen and (max-width:460px) {
-	#citation cite {
-		color: darkblue;
-	}
-}
+// @media screen and (max-width:460px) {
+// 	#citation cite {
+// 		color: darkblue;
+// 	}
+// }
 
 #slider {
 	.make-row();
+	margin-bottom: 30px;
 
 	.slide-container {
-		.make-sm-column(6);
-		.make-sm-column-offset(3);
+		.make-sm-column(12);
+		// .make-sm-column-offset(3);
 	}
 }
 

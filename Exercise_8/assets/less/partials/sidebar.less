@@ -1,5 +1,9 @@
 #main-content #sidebar {
-  .make-lg-column(4);
+  .make-sm-column(12);
+
+  @media (min-width: @screen-sm-min) {
+    .make-sm-column(4);
+  }
 }
 
 div#search-box {

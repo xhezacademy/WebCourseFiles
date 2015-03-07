@@ -3,19 +3,31 @@
   #donate-bar {
     background-color: #008451; 
     overflow: hidden;
-    padding: 50px;
+    padding: 50px 0;
 
-    .col-9 {
-      .pull-left();
-      width: 70%;
+    .donate-slogan {
+      .make-sm-column(12);
+
+      @media (min-width: @screen-sm-min) {
+        .make-sm-column(8);
+
+        h2 {
+          text-align: left !important;
+        }
+      }
 
       h2 {
+        text-align: center;
         margin: 0;
       }
     }
-    .col-3 {
-      .pull-left();
-      width:30%;
+
+    .donate-action {
+      .make-sm-column(12);
+
+      @media (min-width: @screen-sm-min) {
+        .make-sm-column(4);
+      }
 
       p {
         text-align: center;

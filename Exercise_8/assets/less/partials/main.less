@@ -7,11 +7,13 @@
   .make-row();
 
   #posts {
-    border-top: 3px solid black;
-    .make-lg-column(8);
-    // .make-md-column(9);
-    // .make-sm-column();
-  
+    .make-sm-column(10);
+    // .make-sm-column-offset(1);
+
+    @media (min-width: @screen-sm-min) {
+      .make-sm-column(8);
+    }
+
     h2 {
       font-family: Georgia, serif;
       font-size: 1.6rem;
@@ -19,8 +21,10 @@
     }
     
     h5 {
+      border-top: 3px solid black;
+      padding-top: 20px;
       font-size: 1rem;
-      color: 333;
+      color: #333;
       text-transform: uppercase;
     }
     
