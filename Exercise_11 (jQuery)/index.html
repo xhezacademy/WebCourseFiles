@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro to jQuery</title>
+	<style>
+		#wrap {
+			width: 500px;
+			margin: auto;
+			padding: 20px 30px;
+			background-color: khaki;
+		}
+
+		.hightlight {
+			border: 1px solid #444;
+			font-size: 18px;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<h1 id="title">Say hello to jQuery!</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse saepe ad praesentium, iusto, corporis alias temporibus laborum. Eligendi praesentium nemo perferendis, autem, inventore ipsa nobis sit error eos, tenetur, rem!
+		<a href="#">Click Me</a></p>
+
+		<p>Porem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odit quisquam, nostrum incidunt, <span>repellat nihil rerum magnam id sunt</span>, voluptatibus nam. <span>Amet omnis quia voluptatum repellat</span> sed facere doloribus, tempora?</p>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+	// jQuery.noConflict();
+	$(document).ready(function () {
+		// console.log(title);
+		var $title = $('#title'),
+			title = $('#title').text(),
+			name = "Besart",
+			age = 14;
+
+		var $para = $('p:nth-child(3)'); // CSS Selector (not zero based)
+		// var para = $('p').eq(1).text(); // Zero-Based Index
+
+		// console.log($para.siblings());
+		// console.log($para.prev());
+		// console.log($para.next());
+		$para.find('span').eq(1).css({
+			color: 'darkred',
+			fontSize: 20,
+			'font-weight': 700,
+			backgroundColor: '#fd0',
+			padding: '10px'
+		});
+
+		var $pinto = $('p').eq(0)
+		$pinto.eq(0).addClass('hightlight');
+		$pinto.find('a').on('click', function () {
+			$(this).text('Clicked!');
+			// $(this).parent().next().hide();
+			$pinto.next().slideToggle();
+		});
+
+		$('<p>Test</p>').appendTo($para); // .prependTo()
+	});
+	</script>
+</body>
+</html>
