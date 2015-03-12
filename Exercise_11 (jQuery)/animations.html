@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Animation</title>
+
+  <style>
+      body {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        dl {
+        
+        }
+        
+        dd {
+            margin: 0;
+            padding: 1em 0;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+        dd:last-child { border-bottom: 1px solid #ddd; }
+        
+        dt {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.5em;
+            line-height: 2em;
+            background: #e3e3e3;
+            border-bottom: 1px solid #c5c5c5;
+            border-top: 1px solid white;
+            text-shadow: 1px 1px 0px white;
+        }
+        
+        dt:first-child { border-top: none; border-radius: 10px 10px 0 0; }
+        dt:nth-last-child(2) { border-bottom: none; }
+        
+        .hide { display: none; }
+    </style>
+</head>
+<body>
+  
+  <dl>
+    <dt>What is your price?</dt>
+    <dd>My price is $65/h.</dd>
+    <dt>What is your town?</dt>
+    <dd>My price is $65/h.</dd>
+    <dt>What is your price?</dt>
+    <dd>My price is $65/h.</dd>
+    <dt>What is your price?</dt>
+    <dd>My price is $65/h.</dd>
+    <dt>What is your price?</dt>
+    <dd>My price is $65/h.</dd>
+  </dl>
+
+    <script src="scripts/jquery-2.1.3.js"></script>
+    <script src="scripts/jquery.color.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('dd').filter(':nth-child(n+4)').addClass('hide');
+        $('dl').on('mouseover', 'dt', function() {
+            // console.log('mbi to'); 
+            $(this)
+                .next()
+                .stop(true, true)
+                .slideDown() // fast, normal, slow
+                // .show()
+                // .fadeIn()
+                .siblings('dd')
+                    .slideUp();
+                    // .hide()
+                    // .fadeOut(200);
+
+
+            $(this).animate({
+                backgroundColor: '#fd0'
+            }, 400, 'linear', function() {
+                // console.log('animated');
+                // alert('Animacioni perfundoj me suskse');
+            }).animate({
+                fontSize: '40px' 
+            }, { duration: 400, queue: false });
+
+        });
+    });
+    </script>
+
+</body>
+</html>
