@@ -1,0 +1,10 @@
+#wrap {
+  width: 300px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+input {
+  display: block;
+  margin: 10px 10px 20px 20px;
+}
